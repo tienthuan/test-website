@@ -31,11 +31,11 @@ function setUserName() {
     setUserName();
   }else {
     localStorage.setItem('name', myName);
-    if(myName.toLowerCase() !== 'kiryu coco'){
-      myHeading.textContent = 'Welcome, ' + myName;
+    if(myName.toLowerCase() == 'kiryu coco' || myName.toLowerCase() == 'coco kiryu'){
+      myHeading.textContent = 'Welcome, Kaichou';
     } 
     else{
-      myHeading.textContent = 'Welcome, kaichou';
+      myHeading.textContent = 'Welcome, ' + myName;
     }
   }
 }
